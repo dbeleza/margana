@@ -22,6 +22,10 @@
 
 @property (nonatomic, strong) ViewModel *viewModel;
 
+@property (weak, nonatomic) IBOutlet UIButton *buttonAdd;
+
+@property (weak, nonatomic) IBOutlet UIButton *buttonSearch;
+
 @end
 
 @implementation ViewController
@@ -39,6 +43,10 @@
     _textFieldWordToSearch.delegate = self;
     
     _viewModel = [[ViewModel alloc]init];
+    
+    [_buttonAdd setEnabled:false];
+    
+    [_buttonSearch setEnabled:false];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,19 +65,58 @@
         
         _textFieldAddWord.text=@"";
         
+        [_buttonAdd setEnabled:false];
+        
     }
     
 }
 
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    
     if ( [string isEqualToString:@" "] ){
         return NO;
     }
     else {
+        
+        NSUInteger length = 0;
+        
+        if (textField.tag == _textFieldAddWord.tag) {
+            length = _textFieldAddWord.text.length - range.length + string.length;
+            
+            if (length > 0) {
+                _buttonAdd.enabled = YES;
+            } else {
+                _buttonAdd.enabled = NO;
+            }
+        }
+        else if (textField.tag == _textFieldWordToSearch.tag) {
+            length = _textFieldWordToSearch.text.length - range.length + string.length;
+            
+            if (length > 0) {
+                _buttonSearch.enabled = YES;
+            } else {
+                _buttonSearch.enabled = NO;
+            }
+        }
+
+        
         return YES;
     }
 }
+
+-(BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+    
+    if (textField.tag == _textFieldWordToSearch.tag && _dataSource.mutableArray.count==0) {
+        
+        return false;
+        
+    }
+    
+    return true;
+    
+}
+
 
 
 - (IBAction)searchAnagramFromArray:(id)sender {
@@ -100,6 +147,9 @@
     else if ([_textFieldAddWord isFirstResponder]) {
         [_textFieldAddWord resignFirstResponder];
     }
+    
+    [_buttonAdd setEnabled:false];
+    [_buttonSearch setEnabled:false];
     
 }
 
