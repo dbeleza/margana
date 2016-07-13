@@ -8,6 +8,8 @@
 
 #import "ViewControllerListResult.h"
 
+#define labelTag 100
+
 @interface ViewControllerListResult ()<UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -39,6 +41,7 @@
 }
 
 
+#pragma mark - TableView Datasource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return _arrayTableView.count;
 }
@@ -49,7 +52,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     
-    UILabel *label = (UILabel*)[cell.contentView viewWithTag:100];
+    UILabel *label = (UILabel*)[cell.contentView viewWithTag:labelTag];
     
     label.text = [_arrayTableView objectAtIndex:indexPath.row];
     
@@ -58,7 +61,7 @@
 }
 
 
-
+#pragma mark - Close button event
 - (IBAction)closeViewController:(id)sender {
     
     [self dismissViewControllerAnimated:true completion:^{

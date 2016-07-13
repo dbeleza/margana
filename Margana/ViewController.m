@@ -56,6 +56,7 @@
 }
 
 
+#pragma Add button event
 - (IBAction)addWord:(id)sender {
     
     if (_textFieldAddWord.text.length>0) {
@@ -73,6 +74,7 @@
 }
 
 
+#pragma mark - Textfield delegates
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
     
     if ( [string isEqualToString:@" "] ){
@@ -119,7 +121,7 @@
 }
 
 
-
+#pragma mark - Search button event
 - (IBAction)searchAnagramFromArray:(id)sender {
     
     if (_textFieldWordToSearch.text.length>0) {
@@ -148,7 +150,7 @@
     
 }
 
-
+#pragma mark - Clear button event
 - (IBAction)clear:(id)sender {
     
     [_dataSource.mutableArray removeAllObjects];

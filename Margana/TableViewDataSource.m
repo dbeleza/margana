@@ -8,6 +8,7 @@
 
 #import "TableViewDataSource.h"
 
+#define labelTag 100
 
 @implementation TableViewDataSource
 
@@ -36,7 +37,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     
-    UILabel *label = (UILabel*)[cell.contentView viewWithTag:100];
+    UILabel *label = (UILabel*)[cell.contentView viewWithTag:labelTag];
 
     NSString *stringFromArray = [_mutableArray objectAtIndex:indexPath.row];
     
