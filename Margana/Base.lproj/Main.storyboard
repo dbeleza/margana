@@ -36,8 +36,8 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" tag="100" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="12S-V7-eZL">
                                                     <rect key="frame" x="15" y="0.0" width="133" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="15"/>
+                                                    <color key="textColor" red="0.30597594895287961" green="0.30597594895287961" blue="0.30597594895287961" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -74,19 +74,19 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKs-Jd-e97">
-                                <rect key="frame" x="276" y="491" width="48" height="30"/>
+                                <rect key="frame" x="277" y="491" width="48" height="30"/>
                                 <state key="normal" title="Search"/>
                                 <connections>
                                     <action selector="searchAnagramFromArray:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kaT-g2-MmE"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search anagram word from string" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGo-7l-9kH">
-                                <rect key="frame" x="206" y="416" width="189" height="15"/>
+                                <rect key="frame" x="206" y="416" width="206" height="15"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="189" id="kTD-O8-1MR"/>
+                                    <constraint firstAttribute="width" constant="206" id="kTD-O8-1MR"/>
                                     <constraint firstAttribute="height" constant="15" id="zbZ-aq-G94"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="13"/>
                                 <color key="textColor" red="0.27384653141361259" green="0.27384653141361259" blue="0.27384653141361259" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -104,6 +104,12 @@
                                     <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9HI-hH-xvP"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Margana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgB-kA-MNF">
+                                <rect key="frame" x="263" y="19" width="74" height="24"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -115,11 +121,13 @@
                             <constraint firstItem="WNU-GZ-Vur" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="RF1-Nf-ykE"/>
                             <constraint firstItem="vGo-7l-9kH" firstAttribute="top" secondItem="WFq-OG-vid" secondAttribute="bottom" constant="43" id="Xfg-Og-5F8"/>
                             <constraint firstItem="WFq-OG-vid" firstAttribute="top" secondItem="Fr3-aa-otY" secondAttribute="bottom" constant="9" id="YtD-Eb-J0f"/>
-                            <constraint firstItem="vGo-7l-9kH" firstAttribute="centerX" secondItem="AKs-Jd-e97" secondAttribute="centerX" id="Zvz-e5-sMr"/>
+                            <constraint firstItem="vGo-7l-9kH" firstAttribute="centerX" secondItem="AKs-Jd-e97" secondAttribute="centerX" constant="8" id="Zvz-e5-sMr"/>
                             <constraint firstItem="89W-Pj-TEw" firstAttribute="top" secondItem="vGo-7l-9kH" secondAttribute="bottom" constant="8" id="dnK-GX-34G"/>
-                            <constraint firstItem="vGo-7l-9kH" firstAttribute="centerX" secondItem="WFq-OG-vid" secondAttribute="centerX" id="feW-I0-vtX"/>
-                            <constraint firstItem="vGo-7l-9kH" firstAttribute="centerX" secondItem="89W-Pj-TEw" secondAttribute="centerX" id="ggx-JY-Y49"/>
+                            <constraint firstItem="vGo-7l-9kH" firstAttribute="centerX" secondItem="WFq-OG-vid" secondAttribute="centerX" constant="8.5" id="feW-I0-vtX"/>
+                            <constraint firstItem="vGo-7l-9kH" firstAttribute="centerX" secondItem="89W-Pj-TEw" secondAttribute="centerX" constant="8.5" id="ggx-JY-Y49"/>
                             <constraint firstItem="WFq-OG-vid" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j8A-p5-0PD"/>
+                            <constraint firstItem="WgB-kA-MNF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="knf-nk-wdC"/>
+                            <constraint firstItem="WgB-kA-MNF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-269.5" id="n4W-Gp-MBu"/>
                             <constraint firstItem="WFq-OG-vid" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-58.5" id="nH7-N3-qkw"/>
                             <constraint firstItem="Fr3-aa-otY" firstAttribute="leading" secondItem="o08-0s-K8I" secondAttribute="trailing" constant="16" id="rcD-ga-W8j"/>
                         </constraints>
