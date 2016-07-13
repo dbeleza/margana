@@ -114,8 +114,8 @@
                                     <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9HI-hH-xvP"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Margana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgB-kA-MNF">
-                                <rect key="frame" x="263" y="19" width="74" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="~ Margana ~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgB-kA-MNF">
+                                <rect key="frame" x="247" y="19" width="107" height="24"/>
                                 <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="19"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -165,6 +165,76 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+        <!--View Controller List Result-->
+        <scene sceneID="iUL-0q-H2P">
+            <objects>
+                <viewController storyboardIdentifier="ViewControllerListResult" id="x0v-NN-g60" customClass="ViewControllerListResult" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="giS-Ij-J4K"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vj3-re-ehF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lBl-ZZ-PSu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7G-Sd-T6p">
+                                <rect key="frame" x="538" y="39" width="39" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3tC-fY-1U0"/>
+                                    <constraint firstAttribute="width" constant="39" id="X80-T9-Gxu"/>
+                                </constraints>
+                                <state key="normal" title="Close">
+                                    <color key="titleColor" red="0.50980392156862742" green="0.0" blue="0.011764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeViewController:" destination="x0v-NN-g60" eventType="touchUpInside" id="gva-UB-T1p"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i09-U6-CCF">
+                                <rect key="frame" x="20" y="77" width="560" height="503"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" tag="100" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" textLabel="bgN-4J-Dwt" style="IBUITableViewCellStyleDefault" id="ubw-Vs-jhW">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ubw-Vs-jhW" id="eyB-6k-Aoc">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" tag="100" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bgN-4J-Dwt">
+                                                    <rect key="frame" x="15" y="0.0" width="530" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="15"/>
+                                                    <color key="textColor" red="0.16843913612565442" green="0.16843913612565442" blue="0.16843913612565442" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="x0v-NN-g60" id="5v5-Ka-ovO"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="f7G-Sd-T6p" secondAttribute="trailing" constant="3" id="1cM-3a-hIA"/>
+                            <constraint firstItem="i09-U6-CCF" firstAttribute="width" secondItem="lBl-ZZ-PSu" secondAttribute="width" constant="-40" id="6RU-Vc-maQ"/>
+                            <constraint firstItem="i09-U6-CCF" firstAttribute="top" secondItem="giS-Ij-J4K" secondAttribute="bottom" constant="57" id="F2N-Aj-0eU"/>
+                            <constraint firstItem="i09-U6-CCF" firstAttribute="leading" secondItem="lBl-ZZ-PSu" secondAttribute="leadingMargin" id="O2l-rO-wEB"/>
+                            <constraint firstAttribute="bottom" secondItem="i09-U6-CCF" secondAttribute="bottom" constant="20" symbolic="YES" id="Rd2-5b-WRy"/>
+                            <constraint firstItem="i09-U6-CCF" firstAttribute="top" secondItem="f7G-Sd-T6p" secondAttribute="bottom" constant="8" id="fIQ-tl-dR4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="i09-U6-CCF" id="lHP-7U-iQm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qHq-wo-PLV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="978" y="429"/>
         </scene>
     </scenes>
 </document>

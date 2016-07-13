@@ -17,6 +17,8 @@
 		63DCB53D1D36472C00AA847F /* MarganaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DCB53C1D36472C00AA847F /* MarganaUITests.m */; };
 		63DCB54C1D364E9500AA847F /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DCB54B1D364E9500AA847F /* ViewModel.m */; };
 		63DCB54F1D36502000AA847F /* TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DCB54E1D36502000AA847F /* TableViewDataSource.m */; };
+		63DCB5551D368AAB00AA847F /* ViewControllerListResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DCB5541D368AAB00AA847F /* ViewControllerListResult.m */; };
+		63DCB5561D3690CB00AA847F /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DCB54B1D364E9500AA847F /* ViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		63DCB54B1D364E9500AA847F /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
 		63DCB54D1D36502000AA847F /* TableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDataSource.h; sourceTree = "<group>"; };
 		63DCB54E1D36502000AA847F /* TableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDataSource.m; sourceTree = "<group>"; };
+		63DCB5531D368AAB00AA847F /* ViewControllerListResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerListResult.h; sourceTree = "<group>"; };
+		63DCB5541D368AAB00AA847F /* ViewControllerListResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerListResult.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				63DCB54E1D36502000AA847F /* TableViewDataSource.m */,
 				63DCB54A1D364E9500AA847F /* ViewModel.h */,
 				63DCB54B1D364E9500AA847F /* ViewModel.m */,
+				63DCB5531D368AAB00AA847F /* ViewControllerListResult.h */,
+				63DCB5541D368AAB00AA847F /* ViewControllerListResult.m */,
 				63DCB5201D36472C00AA847F /* Main.storyboard */,
 				63DCB5231D36472C00AA847F /* Assets.xcassets */,
 				63DCB5251D36472C00AA847F /* LaunchScreen.storyboard */,
@@ -283,6 +289,7 @@
 				63DCB51F1D36472C00AA847F /* ViewController.m in Sources */,
 				63DCB51C1D36472C00AA847F /* AppDelegate.m in Sources */,
 				63DCB54C1D364E9500AA847F /* ViewModel.m in Sources */,
+				63DCB5551D368AAB00AA847F /* ViewControllerListResult.m in Sources */,
 				63DCB5191D36472C00AA847F /* main.m in Sources */,
 				63DCB54F1D36502000AA847F /* TableViewDataSource.m in Sources */,
 			);
@@ -292,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63DCB5561D3690CB00AA847F /* ViewModel.m in Sources */,
 				63DCB5321D36472C00AA847F /* MarganaTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

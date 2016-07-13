@@ -16,20 +16,27 @@
 
 - (void)getAnagramList:(NSMutableArray*)array withString:(NSString*)string afterCompletion:(void(^)(NSMutableArray *arrayAnagram))completion {
     
-    NSMutableArray *mutableArray = [[NSMutableArray alloc]init];
-    
-    for (NSString *tempString in array) {
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         
-        if ([self checkIfWord:string isEqualToWord:tempString]) {
+        NSMutableArray *mutableArray = [[NSMutableArray alloc]init];
+        
+        for (NSString *tempString in array) {
             
-            [mutableArray addObject:tempString];
+            if ([self checkIfWord:string isEqualToWord:tempString]) {
+                
+                [mutableArray addObject:tempString];
+                
+            }
             
         }
         
-    }
-    
-    completion(mutableArray);
-    
+        dispatch_async(dispatch_get_main_queue(), ^{
+          
+            completion(mutableArray);
+            
+        });
+        
+    });
     
 }
 

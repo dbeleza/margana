@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "TableViewDataSource.h"
 #import "ViewModel.h"
+#import "ViewControllerListResult.h"
 
 @interface ViewController ()<UITextFieldDelegate>
 
@@ -125,7 +126,21 @@
      
         [_viewModel getAnagramList:_dataSource.mutableArray withString:_textFieldWordToSearch.text afterCompletion:^(NSMutableArray *arrayAnagram) {
             
-            NSLog(@"%@", arrayAnagram);
+            if (arrayAnagram.count>0) {
+                
+                UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                
+                ViewControllerListResult *vc = [sb instantiateViewControllerWithIdentifier:@"ViewControllerListResult"];
+                
+                [self setModalPresentationStyle:UIModalPresentationFullScreen];
+                
+                [self setModalTransitionStyle:UIModalTransitionStyleCoverVertical];
+                
+                [self presentViewController:vc animated:true completion:nil];
+                
+                [vc presentArray:arrayAnagram];
+                
+            }
             
         }];
         
