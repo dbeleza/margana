@@ -113,14 +113,8 @@
 			children = (
 				63DCB51A1D36472C00AA847F /* AppDelegate.h */,
 				63DCB51B1D36472C00AA847F /* AppDelegate.m */,
-				63DCB51D1D36472C00AA847F /* ViewController.h */,
-				63DCB51E1D36472C00AA847F /* ViewController.m */,
-				63DCB54D1D36502000AA847F /* TableViewDataSource.h */,
-				63DCB54E1D36502000AA847F /* TableViewDataSource.m */,
-				63DCB54A1D364E9500AA847F /* ViewModel.h */,
-				63DCB54B1D364E9500AA847F /* ViewModel.m */,
-				63DCB5531D368AAB00AA847F /* ViewControllerListResult.h */,
-				63DCB5541D368AAB00AA847F /* ViewControllerListResult.m */,
+				63DCB5571D36935500AA847F /* MainScreen */,
+				63DCB5581D36935D00AA847F /* ResultScreen */,
 				63DCB5201D36472C00AA847F /* Main.storyboard */,
 				63DCB5231D36472C00AA847F /* Assets.xcassets */,
 				63DCB5251D36472C00AA847F /* LaunchScreen.storyboard */,
@@ -154,6 +148,28 @@
 				63DCB53E1D36472C00AA847F /* Info.plist */,
 			);
 			path = MarganaUITests;
+			sourceTree = "<group>";
+		};
+		63DCB5571D36935500AA847F /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				63DCB51D1D36472C00AA847F /* ViewController.h */,
+				63DCB51E1D36472C00AA847F /* ViewController.m */,
+				63DCB54D1D36502000AA847F /* TableViewDataSource.h */,
+				63DCB54E1D36502000AA847F /* TableViewDataSource.m */,
+				63DCB54A1D364E9500AA847F /* ViewModel.h */,
+				63DCB54B1D364E9500AA847F /* ViewModel.m */,
+			);
+			name = MainScreen;
+			sourceTree = "<group>";
+		};
+		63DCB5581D36935D00AA847F /* ResultScreen */ = {
+			isa = PBXGroup;
+			children = (
+				63DCB5531D368AAB00AA847F /* ViewControllerListResult.h */,
+				63DCB5541D368AAB00AA847F /* ViewControllerListResult.m */,
+			);
+			name = ResultScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
