@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63DCB5191D36472C00AA847F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DCB5181D36472C00AA847F /* main.m */; };
+		63DCB51C1D36472C00AA847F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DCB51B1D36472C00AA847F /* AppDelegate.m */; };
+		63DCB51F1D36472C00AA847F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DCB51E1D36472C00AA847F /* ViewController.m */; };
+		63DCB5221D36472C00AA847F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63DCB5201D36472C00AA847F /* Main.storyboard */; };
+		63DCB5241D36472C00AA847F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63DCB5231D36472C00AA847F /* Assets.xcassets */; };
+		63DCB5271D36472C00AA847F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63DCB5251D36472C00AA847F /* LaunchScreen.storyboard */; };
+		63DCB5321D36472C00AA847F /* MarganaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DCB5311D36472C00AA847F /* MarganaTests.m */; };
+		63DCB53D1D36472C00AA847F /* MarganaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DCB53C1D36472C00AA847F /* MarganaUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63DCB52E1D36472C00AA847F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63DCB50C1D36472C00AA847F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63DCB5131D36472C00AA847F;
+			remoteInfo = Margana;
+		};
+		63DCB5391D36472C00AA847F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63DCB50C1D36472C00AA847F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63DCB5131D36472C00AA847F;
+			remoteInfo = Margana;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		63DCB5141D36472C00AA847F /* Margana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Margana.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63DCB5181D36472C00AA847F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63DCB51A1D36472C00AA847F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		63DCB51B1D36472C00AA847F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		63DCB51D1D36472C00AA847F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		63DCB51E1D36472C00AA847F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		63DCB5211D36472C00AA847F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		63DCB5231D36472C00AA847F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63DCB5261D36472C00AA847F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63DCB5281D36472C00AA847F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63DCB52D1D36472C00AA847F /* MarganaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarganaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63DCB5311D36472C00AA847F /* MarganaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarganaTests.m; sourceTree = "<group>"; };
+		63DCB5331D36472C00AA847F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63DCB5381D36472C00AA847F /* MarganaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarganaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63DCB53C1D36472C00AA847F /* MarganaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarganaUITests.m; sourceTree = "<group>"; };
+		63DCB53E1D36472C00AA847F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63DCB5111D36472C00AA847F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63DCB52A1D36472C00AA847F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63DCB5351D36472C00AA847F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63DCB50B1D36472C00AA847F = {
+			isa = PBXGroup;
+			children = (
+				63DCB5161D36472C00AA847F /* Margana */,
+				63DCB5301D36472C00AA847F /* MarganaTests */,
+				63DCB53B1D36472C00AA847F /* MarganaUITests */,
+				63DCB5151D36472C00AA847F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63DCB5151D36472C00AA847F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63DCB5141D36472C00AA847F /* Margana.app */,
+				63DCB52D1D36472C00AA847F /* MarganaTests.xctest */,
+				63DCB5381D36472C00AA847F /* MarganaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63DCB5161D36472C00AA847F /* Margana */ = {
+			isa = PBXGroup;
+			children = (
+				63DCB51A1D36472C00AA847F /* AppDelegate.h */,
+				63DCB51B1D36472C00AA847F /* AppDelegate.m */,
+				63DCB51D1D36472C00AA847F /* ViewController.h */,
+				63DCB51E1D36472C00AA847F /* ViewController.m */,
+				63DCB5201D36472C00AA847F /* Main.storyboard */,
+				63DCB5231D36472C00AA847F /* Assets.xcassets */,
+				63DCB5251D36472C00AA847F /* LaunchScreen.storyboard */,
+				63DCB5281D36472C00AA847F /* Info.plist */,
+				63DCB5171D36472C00AA847F /* Supporting Files */,
+			);
+			path = Margana;
+			sourceTree = "<group>";
+		};
+		63DCB5171D36472C00AA847F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63DCB5181D36472C00AA847F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63DCB5301D36472C00AA847F /* MarganaTests */ = {
+			isa = PBXGroup;
+			children = (
+				63DCB5311D36472C00AA847F /* MarganaTests.m */,
+				63DCB5331D36472C00AA847F /* Info.plist */,
+			);
+			path = MarganaTests;
+			sourceTree = "<group>";
+		};
+		63DCB53B1D36472C00AA847F /* MarganaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				63DCB53C1D36472C00AA847F /* MarganaUITests.m */,
+				63DCB53E1D36472C00AA847F /* Info.plist */,
+			);
+			path = MarganaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63DCB5131D36472C00AA847F /* Margana */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63DCB5411D36472C00AA847F /* Build configuration list for PBXNativeTarget "Margana" */;
+			buildPhases = (
+				63DCB5101D36472C00AA847F /* Sources */,
+				63DCB5111D36472C00AA847F /* Frameworks */,
+				63DCB5121D36472C00AA847F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Margana;
+			productName = Margana;
+			productReference = 63DCB5141D36472C00AA847F /* Margana.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63DCB52C1D36472C00AA847F /* MarganaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63DCB5441D36472C00AA847F /* Build configuration list for PBXNativeTarget "MarganaTests" */;
+			buildPhases = (
+				63DCB5291D36472C00AA847F /* Sources */,
+				63DCB52A1D36472C00AA847F /* Frameworks */,
+				63DCB52B1D36472C00AA847F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63DCB52F1D36472C00AA847F /* PBXTargetDependency */,
+			);
+			name = MarganaTests;
+			productName = MarganaTests;
+			productReference = 63DCB52D1D36472C00AA847F /* MarganaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		63DCB5371D36472C00AA847F /* MarganaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63DCB5471D36472C00AA847F /* Build configuration list for PBXNativeTarget "MarganaUITests" */;
+			buildPhases = (
+				63DCB5341D36472C00AA847F /* Sources */,
+				63DCB5351D36472C00AA847F /* Frameworks */,
+				63DCB5361D36472C00AA847F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63DCB53A1D36472C00AA847F /* PBXTargetDependency */,
+			);
+			name = MarganaUITests;
+			productName = MarganaUITests;
+			productReference = 63DCB5381D36472C00AA847F /* MarganaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63DCB50C1D36472C00AA847F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "David Beleza";
+				TargetAttributes = {
+					63DCB5131D36472C00AA847F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					63DCB52C1D36472C00AA847F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 63DCB5131D36472C00AA847F;
+					};
+					63DCB5371D36472C00AA847F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 63DCB5131D36472C00AA847F;
+					};
+				};
+			};
+			buildConfigurationList = 63DCB50F1D36472C00AA847F /* Build configuration list for PBXProject "Margana" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 63DCB50B1D36472C00AA847F;
+			productRefGroup = 63DCB5151D36472C00AA847F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63DCB5131D36472C00AA847F /* Margana */,
+				63DCB52C1D36472C00AA847F /* MarganaTests */,
+				63DCB5371D36472C00AA847F /* MarganaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63DCB5121D36472C00AA847F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63DCB5271D36472C00AA847F /* LaunchScreen.storyboard in Resources */,
+				63DCB5241D36472C00AA847F /* Assets.xcassets in Resources */,
+				63DCB5221D36472C00AA847F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63DCB52B1D36472C00AA847F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63DCB5361D36472C00AA847F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63DCB5101D36472C00AA847F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63DCB51F1D36472C00AA847F /* ViewController.m in Sources */,
+				63DCB51C1D36472C00AA847F /* AppDelegate.m in Sources */,
+				63DCB5191D36472C00AA847F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63DCB5291D36472C00AA847F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63DCB5321D36472C00AA847F /* MarganaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63DCB5341D36472C00AA847F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63DCB53D1D36472C00AA847F /* MarganaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63DCB52F1D36472C00AA847F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63DCB5131D36472C00AA847F /* Margana */;
+			targetProxy = 63DCB52E1D36472C00AA847F /* PBXContainerItemProxy */;
+		};
+		63DCB53A1D36472C00AA847F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63DCB5131D36472C00AA847F /* Margana */;
+			targetProxy = 63DCB5391D36472C00AA847F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63DCB5201D36472C00AA847F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63DCB5211D36472C00AA847F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		63DCB5251D36472C00AA847F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63DCB5261D36472C00AA847F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63DCB53F1D36472C00AA847F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		63DCB5401D36472C00AA847F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63DCB5421D36472C00AA847F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Margana/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BetBritght.Margana;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		63DCB5431D36472C00AA847F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Margana/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BetBritght.Margana;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		63DCB5451D36472C00AA847F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MarganaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BetBritght.MarganaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Margana.app/Margana";
+			};
+			name = Debug;
+		};
+		63DCB5461D36472C00AA847F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = MarganaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BetBritght.MarganaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Margana.app/Margana";
+			};
+			name = Release;
+		};
+		63DCB5481D36472C00AA847F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MarganaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BetBritght.MarganaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Margana;
+			};
+			name = Debug;
+		};
+		63DCB5491D36472C00AA847F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MarganaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = BetBritght.MarganaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Margana;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63DCB50F1D36472C00AA847F /* Build configuration list for PBXProject "Margana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63DCB53F1D36472C00AA847F /* Debug */,
+				63DCB5401D36472C00AA847F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63DCB5411D36472C00AA847F /* Build configuration list for PBXNativeTarget "Margana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63DCB5421D36472C00AA847F /* Debug */,
+				63DCB5431D36472C00AA847F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		63DCB5441D36472C00AA847F /* Build configuration list for PBXNativeTarget "MarganaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63DCB5451D36472C00AA847F /* Debug */,
+				63DCB5461D36472C00AA847F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		63DCB5471D36472C00AA847F /* Build configuration list for PBXNativeTarget "MarganaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63DCB5481D36472C00AA847F /* Debug */,
+				63DCB5491D36472C00AA847F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63DCB50C1D36472C00AA847F /* Project object */;
+}
