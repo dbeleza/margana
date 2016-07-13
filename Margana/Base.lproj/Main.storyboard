@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -25,14 +26,14 @@
                                     <constraint firstAttribute="width" constant="163" id="sLw-yc-0Um"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="12S-V7-eZL" style="IBUITableViewCellStyleDefault" id="3aN-l1-kSo">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellId" textLabel="12S-V7-eZL" style="IBUITableViewCellStyleDefault" id="3aN-l1-kSo">
                                         <rect key="frame" x="0.0" y="28" width="163" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3aN-l1-kSo" id="Sc6-z2-giR">
                                             <rect key="frame" x="0.0" y="0.0" width="163" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="12S-V7-eZL">
+                                                <label opaque="NO" multipleTouchEnabled="YES" tag="100" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="12S-V7-eZL">
                                                     <rect key="frame" x="15" y="0.0" width="133" height="43"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -60,6 +61,9 @@
                                     <constraint firstAttribute="width" constant="30" id="aE8-71-bcu"/>
                                 </constraints>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addWord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mtu-cO-MNK"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="89W-Pj-TEw">
                                 <rect key="frame" x="252" y="439" width="97" height="30"/>
@@ -72,6 +76,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKs-Jd-e97">
                                 <rect key="frame" x="276" y="491" width="48" height="30"/>
                                 <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="searchAnagramFromArray:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kaT-g2-MmE"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Search anagram word from string" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGo-7l-9kH">
                                 <rect key="frame" x="206" y="416" width="189" height="15"/>
@@ -83,12 +90,29 @@
                                 <color key="textColor" red="0.27384653141361259" green="0.27384653141361259" blue="0.27384653141361259" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNU-GZ-Vur">
+                                <rect key="frame" x="0.0" y="538" width="600" height="54"/>
+                                <color key="backgroundColor" red="0.58960514834205924" green="0.024195343287441134" blue="0.0060298218111466068" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="YmR-JL-x9W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleColor" red="0.97074611950099343" green="1" blue="0.96687534751036897" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9HI-hH-xvP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WNU-GZ-Vur" secondAttribute="bottom" constant="8" id="4ro-9C-yRh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WNU-GZ-Vur" secondAttribute="trailing" constant="-20" id="88F-l2-o9e"/>
                             <constraint firstItem="WFq-OG-vid" firstAttribute="leading" secondItem="o08-0s-K8I" secondAttribute="trailing" constant="-109" id="DN1-O5-sIJ"/>
                             <constraint firstItem="AKs-Jd-e97" firstAttribute="top" secondItem="89W-Pj-TEw" secondAttribute="bottom" constant="22" id="Jhc-H8-Xfu"/>
                             <constraint firstItem="WFq-OG-vid" firstAttribute="top" secondItem="o08-0s-K8I" secondAttribute="bottom" constant="8" id="LIe-9l-LRQ"/>
+                            <constraint firstItem="WNU-GZ-Vur" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="RF1-Nf-ykE"/>
                             <constraint firstItem="vGo-7l-9kH" firstAttribute="top" secondItem="WFq-OG-vid" secondAttribute="bottom" constant="43" id="Xfg-Og-5F8"/>
                             <constraint firstItem="WFq-OG-vid" firstAttribute="top" secondItem="Fr3-aa-otY" secondAttribute="bottom" constant="9" id="YtD-Eb-J0f"/>
                             <constraint firstItem="vGo-7l-9kH" firstAttribute="centerX" secondItem="AKs-Jd-e97" secondAttribute="centerX" id="Zvz-e5-sMr"/>
@@ -100,6 +124,11 @@
                             <constraint firstItem="Fr3-aa-otY" firstAttribute="leading" secondItem="o08-0s-K8I" secondAttribute="trailing" constant="16" id="rcD-ga-W8j"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="WFq-OG-vid" id="elX-05-T5L"/>
+                        <outlet property="textFieldAddWord" destination="o08-0s-K8I" id="wzI-kd-KCV"/>
+                        <outlet property="textFieldWordToSearch" destination="89W-Pj-TEw" id="oD5-v9-Bg0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

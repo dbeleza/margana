@@ -15,6 +15,8 @@
 		63DCB5271D36472C00AA847F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63DCB5251D36472C00AA847F /* LaunchScreen.storyboard */; };
 		63DCB5321D36472C00AA847F /* MarganaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DCB5311D36472C00AA847F /* MarganaTests.m */; };
 		63DCB53D1D36472C00AA847F /* MarganaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DCB53C1D36472C00AA847F /* MarganaUITests.m */; };
+		63DCB54C1D364E9500AA847F /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DCB54B1D364E9500AA847F /* ViewModel.m */; };
+		63DCB54F1D36502000AA847F /* TableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 63DCB54E1D36502000AA847F /* TableViewDataSource.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		63DCB5381D36472C00AA847F /* MarganaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarganaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63DCB53C1D36472C00AA847F /* MarganaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarganaUITests.m; sourceTree = "<group>"; };
 		63DCB53E1D36472C00AA847F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63DCB54A1D364E9500AA847F /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
+		63DCB54B1D364E9500AA847F /* ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewModel.m; sourceTree = "<group>"; };
+		63DCB54D1D36502000AA847F /* TableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewDataSource.h; sourceTree = "<group>"; };
+		63DCB54E1D36502000AA847F /* TableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewDataSource.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				63DCB51B1D36472C00AA847F /* AppDelegate.m */,
 				63DCB51D1D36472C00AA847F /* ViewController.h */,
 				63DCB51E1D36472C00AA847F /* ViewController.m */,
+				63DCB54D1D36502000AA847F /* TableViewDataSource.h */,
+				63DCB54E1D36502000AA847F /* TableViewDataSource.m */,
+				63DCB54A1D364E9500AA847F /* ViewModel.h */,
+				63DCB54B1D364E9500AA847F /* ViewModel.m */,
 				63DCB5201D36472C00AA847F /* Main.storyboard */,
 				63DCB5231D36472C00AA847F /* Assets.xcassets */,
 				63DCB5251D36472C00AA847F /* LaunchScreen.storyboard */,
@@ -272,7 +282,9 @@
 			files = (
 				63DCB51F1D36472C00AA847F /* ViewController.m in Sources */,
 				63DCB51C1D36472C00AA847F /* AppDelegate.m in Sources */,
+				63DCB54C1D364E9500AA847F /* ViewModel.m in Sources */,
 				63DCB5191D36472C00AA847F /* main.m in Sources */,
+				63DCB54F1D36502000AA847F /* TableViewDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +508,7 @@
 				63DCB5431D36472C00AA847F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63DCB5441D36472C00AA847F /* Build configuration list for PBXNativeTarget "MarganaTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +517,7 @@
 				63DCB5461D36472C00AA847F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63DCB5471D36472C00AA847F /* Build configuration list for PBXNativeTarget "MarganaUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +526,7 @@
 				63DCB5491D36472C00AA847F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
